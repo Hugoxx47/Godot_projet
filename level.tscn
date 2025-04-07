@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://bsq2c6fpphl2r"]
+
+[ext_resource type="Script" path="res://level.gd" id="1_i1nj5"]
+[ext_resource type="PackedScene" uid="uid://cq47o333tcwir" path="res://jungle.tscn" id="1_y407g"]
+[ext_resource type="PackedScene" uid="uid://cut726oslvos0" path="res://dino.tscn" id="2_nxd2l"]
+[ext_resource type="PackedScene" uid="uid://c8ef6gk061lql" path="res://sol.tscn" id="3_0bged"]
+[ext_resource type="PackedScene" uid="uid://csbafvt6c0sw" path="res://Score.tscn" id="5_po6l3"]
+[ext_resource type="PackedScene" uid="uid://dbeq8qlfedxjg" path="res://restart.tscn" id="6_258va"]
+
+[node name="Level" type="Node"]
+script = ExtResource("1_i1nj5")
+
+[node name="jungle" parent="." instance=ExtResource("1_y407g")]
+
+[node name="sol" parent="." instance=ExtResource("3_0bged")]
+position = Vector2(-2, -4)
+
+[node name="dino" parent="." instance=ExtResource("2_nxd2l")]
+position = Vector2(155, 944)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 543)
+
+[node name="SCORES" parent="." instance=ExtResource("5_po6l3")]
+
+[node name="restart" parent="." instance=ExtResource("6_258va")]
+process_mode = 2

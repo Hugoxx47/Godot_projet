@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://csbafvt6c0sw"]
+
+[ext_resource type="FontFile" uid="uid://27yy64t4mnks" path="res://retro_gaming/Retro Gaming.ttf" id="1_txl3x"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="score" type="Label" parent="."]
+offset_right = 196.0
+offset_bottom = 51.0
+theme_override_fonts/font = ExtResource("1_txl3x")
+theme_override_font_sizes/font_size = 40
+text = "SCORE : "
+vertical_alignment = 2
+
+[node name="Start" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -399.0
+offset_top = -25.5
+offset_right = 399.0
+offset_bottom = 25.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_txl3x")
+theme_override_font_sizes/font_size = 40
+text = "Appuyer sur entrez pour jouer
+"
+vertical_alignment = 2
+
+[node name="Highscore" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -316.0
+offset_bottom = 51.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_txl3x")
+theme_override_font_sizes/font_size = 40
+text = "HIGHSCORE : 0"
+vertical_alignment = 2

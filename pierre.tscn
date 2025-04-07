@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://chdrnpank0u4q"]
+
+[ext_resource type="Texture2D" uid="uid://dclryh5pmsx3q" path="res://free-swamp-game-tileset-pixel-art/3 Objects/Stones/1.png" id="1_yg1xo"]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-3.8147e-06, -1.90735e-06)
+scale = Vector2(2.38889, 2.17797)
+texture = ExtResource("1_yg1xo")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-8, -4.54747e-13)
+scale = Vector2(2.53175, 2.43219)
+polygon = PackedVector2Array(3.00188, -25.1926, -3.31787, -21.9034, -9.63762, -5.45738, -19.1172, -5.45738, -26.6667, 13.3333, -28.5969, 27.4347, 31.4408, 27.4347, 29.3333, 10.6667, 26.6667, 8, 26.5, -16.7, 26.5, -21.4, 18.8013, -25.1926)

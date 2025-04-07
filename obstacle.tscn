@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://nbuw4mynwo4a"]
+
+[ext_resource type="Texture2D" uid="uid://be1o0wny5dau7" path="res://free-swamp-game-tileset-pixel-art/3 Objects/Fence/1.png" id="1_7r3cw"]
+
+[node name="Branche" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(11.6, -6.4)
+scale = Vector2(4, 4)
+texture = ExtResource("1_7r3cw")
+metadata/_edit_group_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(11.6, -7.4)
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(11.5, 9, 11.25, 0, 7, 0.25, 3.5, 6.75, -0.274178, 3.09377, -4.5, -1, -5.5, -8.75, -10.75, -9, -11.5, 9)
+metadata/_edit_group_ = true

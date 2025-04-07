@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8ef6gk061lql"]
+
+[ext_resource type="Texture2D" uid="uid://dwjewwcm8qplg" path="res://Jungle Asset Pack/Jungle Asset Pack/parallax background/ground.png" id="1_0vo4f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ejlpq"]
+size = Vector2(3831, 83.5)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, 977)
+scale = Vector2(1.65842, 1)
+texture = ExtResource("1_0vo4f")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1913.5, 1034.75)
+shape = SubResource("RectangleShape2D_ejlpq")
